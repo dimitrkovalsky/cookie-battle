@@ -6,7 +6,7 @@
 	<groupId>com.liberty</groupId>
 	<artifactId>cookie-batle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>cookie-battle</name>
 	<description>cookie-battle application</description>
