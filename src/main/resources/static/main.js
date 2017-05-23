@@ -548,7 +548,7 @@ Game.Launch=function()
 					Game.recalculateGains=1;
 					Game.storeToRebuild=1;
 					Game.upgradesToRebuild=1;
-					Game.Popup('Game loaded');
+					Game.Popup('Игра загрузилась');
 				}
 			}
 		}
@@ -665,19 +665,19 @@ Game.Launch=function()
 		Game.mouseCps=function()
 		{
 			var add=0;
-			if (Game.Has('Thousand fingers')) add+=0.1;
-			if (Game.Has('Million fingers')) add+=0.5;
-			if (Game.Has('Billion fingers')) add+=2;
-			if (Game.Has('Trillion fingers')) add+=10;
-			if (Game.Has('Quadrillion fingers')) add+=20;
-			if (Game.Has('Quintillion fingers')) add+=100;
+			if (Game.Has('Тисяча пальцов')) add+=0.1;
+			if (Game.Has('Миллион пальцов')) add+=0.5;
+			if (Game.Has('Биллион пальцов')) add+=2;
+			if (Game.Has('Трильйон пальцов')) add+=10;
+			if (Game.Has('Квадральйон пальцов')) add+=20;
+			if (Game.Has('Квинтиньйон пальцов')) add+=100;
 			var num=0;
 			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
 			add=add*num;
-			if (Game.Has('Plastic mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Iron mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Titanium mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Adamantium mouse')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Пластиковий рот')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Железний рот')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Титановий рот')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Адамантовий рот')) add+=Game.cookiesPs*0.01;
 			var mult=1;
 			if (Game.clickFrenzy>0) mult*=777;
 			return mult*Game.ComputeCps(1,Game.Has('Reinforced index finger'),Game.Has('Carpal tunnel prevention cream')+Game.Has('Ambidextrous'),add);
@@ -1785,7 +1785,7 @@ Game.Launch=function()
 			
 			if (list.length==0)
 			{
-				if (Game.cookiesEarned<5) list.push('You feel like making cookies. But nobody wants to eat your cookies.');
+				if (Game.cookiesEarned<5) list.push('Ты чувствуешь что делаешь печеньки. Но никто не хочет есть твои печеньки.');
 				else if (Game.cookiesEarned<50) list.push('Your first batch goes to the trash. The neighborhood raccoon barely touches it.');
 				else if (Game.cookiesEarned<100) list.push('Your family accepts to try some of your cookies.');
 				else if (Game.cookiesEarned<500) list.push('Your cookies are popular in the neighborhood.');
